@@ -1,13 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import WeddingInvitation from './WeddingInvitation.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/WEDDING-APP'}>
-      <WeddingInvitation />
-    </BrowserRouter>
+    <WeddingInvitation />
   </StrictMode>,
 )
