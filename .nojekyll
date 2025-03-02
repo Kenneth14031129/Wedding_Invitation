@@ -1,6 +1,0 @@
-# Create a .nojekyll file in your project root
-touch .nojekyll
-
-# Also ensure it gets copied to the build output by placing it in the public folder
-mkdir -p public
-touch public/.nojekyll
