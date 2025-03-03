@@ -173,11 +173,11 @@ const ResponsiveHeader = ({
                 />
               </div>
               <p className="font-['Playfair_Display'] italic text-gray-500 text-sm">
-                &quot;Two souls with a single thought, two hearts that beat
-                as one&quot;
+                &quot;Two souls with a single thought, two hearts that beat as
+                one&quot;
               </p>
               <div className="pt-4 text-center text-gray-400 text-xs">
-                #KatrinaAndCharles2025
+                #Katrina&Charles2025
               </div>
             </div>
           </div>
@@ -233,37 +233,37 @@ NavLink.propTypes = {
 
 // New Mobile Menu Item - Larger and more touch-friendly
 const MobileMenuItem = ({ active, onClick, icon: Icon, label }) => (
-    <button
-      onClick={onClick}
-      className={`w-full py-4 px-4 flex items-center text-left rounded-xl transition-all duration-300 ${
-        active
-          ? "bg-gradient-to-r from-pink-50 to-blue-50 shadow-sm"
-          : "hover:bg-gray-50"
+  <button
+    onClick={onClick}
+    className={`w-full py-4 px-4 flex items-center text-left rounded-xl transition-all duration-300 ${
+      active
+        ? "bg-gradient-to-r from-pink-50 to-blue-50 shadow-sm"
+        : "hover:bg-gray-50"
+    }`}
+  >
+    <div
+      className={`mr-4 flex items-center justify-center w-10 h-10 rounded-full ${
+        active ? "bg-gradient-to-br from-pink-100 to-blue-100" : "bg-gray-100"
       }`}
     >
-      <div
-        className={`mr-4 flex items-center justify-center w-10 h-10 rounded-full ${
-          active ? "bg-gradient-to-br from-pink-100 to-blue-100" : "bg-gray-100"
-        }`}
-      >
-        <Icon
-          className={`w-5 h-5 ${active ? "text-pink-500" : "text-blue-400"}`}
-        />
+      <Icon
+        className={`w-5 h-5 ${active ? "text-pink-500" : "text-blue-400"}`}
+      />
+    </div>
+    <span
+      className={`font-['Playfair_Display'] text-xl tracking-wide font-light italic transition-colors duration-300 ${
+        active ? "text-gray-800" : "text-gray-600"
+      }`}
+    >
+      {label}
+    </span>
+    {active && (
+      <div className="ml-auto">
+        <div className="w-2 h-2 rounded-full bg-pink-400"></div>
       </div>
-      <span 
-        className={`font-['Playfair_Display'] text-xl tracking-wide font-light italic transition-colors duration-300 ${
-          active ? "text-gray-800" : "text-gray-600"
-        }`}
-      >
-        {label}
-      </span>
-      {active && (
-        <div className="ml-auto">
-          <div className="w-2 h-2 rounded-full bg-pink-400"></div>
-        </div>
-      )}
-    </button>
-  );
+    )}
+  </button>
+);
 
 MobileMenuItem.propTypes = {
   active: PropTypes.bool,
