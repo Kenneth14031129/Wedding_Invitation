@@ -411,7 +411,7 @@ const WeddingInvitation = () => {
                     {/* Enhanced names section with glowing effect */}
                     <div className="text-center space-y-2 sm:space-y-4 relative">
                       <div className="absolute inset-0 -m-4 bg-gradient-to-r from-blue-100/0 via-pink-100/20 to-blue-100/0 rounded-full blur-xl opacity-70"></div>
-                      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-['Great_Vibes'] tracking-wide text-blue-800 hover:text-blue-600 transition-colors duration-500 drop-shadow-sm">
+                      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-['Imperial_Script'] tracking-wide text-blue-800 hover:text-blue-600 transition-colors duration-500 drop-shadow-sm">
                         Katrina
                       </h1>
                       <div className="flex items-center justify-center gap-2 sm:gap-4 my-1 sm:my-2 md:my-4">
@@ -425,7 +425,7 @@ const WeddingInvitation = () => {
                         </div>
                         <div className="w-6 sm:w-10 md:w-16 h-px bg-gradient-to-r from-pink-200 to-blue-200" />
                       </div>
-                      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-['Great_Vibes'] tracking-wide text-pink-800 hover:text-pink-600 transition-colors duration-500 drop-shadow-sm">
+                      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-['Imperial_Script'] tracking-wide text-pink-800 hover:text-pink-600 transition-colors duration-500 drop-shadow-sm">
                         Charles
                       </h1>
                     </div>
@@ -433,55 +433,22 @@ const WeddingInvitation = () => {
                     {/* Date and venue section - enhanced with countdown */}
                     <div className="text-center space-y-3 sm:space-y-4 md:space-y-6">
                       <div className="bg-gradient-to-r from-pink-50/0 via-pink-50/50 to-pink-50/0 py-3 px-2 rounded-lg">
-                        <p className="text-lg sm:text-xl md:text-2xl font-['Playfair_Display'] italic text-gray-600 font-light tracking-widest">
+                        <p className="text-lg sm:text-xl md:text-2xl font-['Imperial_Script']  text-gray-600 font-light tracking-widest">
                           May 18, 2025
                         </p>
                         <div className="flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base md:text-lg text-gray-500 mt-1">
                           <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-blue-300 shadow-sm" />
-                          <span className="font-['Playfair_Display'] italic">
+                          <span className="font-['Imperial_Script'] ">
                             3 PM
                           </span>
                           <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-pink-300 shadow-sm" />
                         </div>
                       </div>
                       <div className="space-y-1 sm:space-y-2 md:space-y-3">
-                        <p className="font-['Great_Vibes'] text-2xl sm:text-3xl md:text-4xl text-gray-800 relative inline-block">
+                        <p className="font-['Imperial_Script'] text-2xl sm:text-3xl md:text-4xl text-gray-800 relative inline-block">
                           Bacolor, Pampanga
                           <span className="absolute -bottom-1 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-200 to-transparent"></span>
                         </p>
-                      </div>
-                    </div>
-
-                    {/* Countdown timer */}
-                    <div className="bg-gradient-to-r from-blue-50/0 via-blue-50/50 to-blue-50/0 py-3 px-4 rounded-lg">
-                      <p className="text-center font-['Playfair_Display'] italic text-gray-600 text-sm mb-2">
-                        Join us in celebrating our love in
-                      </p>
-                      <div className="flex justify-center gap-2 sm:gap-4">
-                        <div className="text-center">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-pink-50 rounded-lg shadow-sm border border-pink-100">
-                            <span className="font-bold text-gray-700">442</span>
-                          </div>
-                          <span className="text-xs text-gray-500 mt-1">
-                            Days
-                          </span>
-                        </div>
-                        <div className="text-center">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-blue-50 rounded-lg shadow-sm border border-blue-100">
-                            <span className="font-bold text-gray-700">10</span>
-                          </div>
-                          <span className="text-xs text-gray-500 mt-1">
-                            Hours
-                          </span>
-                        </div>
-                        <div className="text-center">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-pink-50 rounded-lg shadow-sm border border-pink-100">
-                            <span className="font-bold text-gray-700">38</span>
-                          </div>
-                          <span className="text-xs text-gray-500 mt-1">
-                            Minutes
-                          </span>
-                        </div>
                       </div>
                     </div>
 
@@ -499,7 +466,7 @@ const WeddingInvitation = () => {
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
                       <button
                         onClick={() => scrollToSection(rsvpRef)}
-                        className="px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-['Great_Vibes'] text-xl hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-md"
+                        className="px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-['Playfair_Display'] italic text-xl hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-md"
                       >
                         RSVP Now
                       </button>
@@ -535,19 +502,22 @@ const WeddingInvitation = () => {
                 {/* Bottom Section with Divider - Updated border color */}
                 <div className="pt-8 border-t border-gray-300/30">
                   <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                    {/* This div will always show on all screen sizes */}
                     <div className="flex items-center gap-2">
                       <Heart
                         className="w-4 h-4 text-pink-400"
                         fill="currentColor"
                       />
-                      <span className="font-['Great_Vibes'] text-2xl text-gray-800">
+                      <span className="font-['Imperial_Script'] text-2xl text-gray-800">
                         Katrina & Charles
                       </span>
                     </div>
-                    <p className="font-['Playfair_Display'] italic text-gray-500 text-sm">
-                      #KatrinaAndCharles2025
+
+                    {/* These will only show on md screens and up */}
+                    <p className="hidden md:block font-['Imperial_Script'] text-gray-500 text-2xl">
+                      #Katrina&Charles2025
                     </p>
-                    <p className="text-gray-500 text-sm">
+                    <p className="hidden md:block font-['Imperial_Script'] text-gray-500 text-2xl">
                       © 2025 All rights reserved
                     </p>
                   </div>

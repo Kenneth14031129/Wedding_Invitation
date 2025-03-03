@@ -163,7 +163,7 @@ const CompressedLocationCard = ({
         <p className="font-['Playfair_Display'] italic text-gray-600 text-sm sm:text-base leading-relaxed">
           {address}
         </p>
-        <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">
+        <p className="text-gray-500 text-xs sm:text-sm leading-relaxed font-['Playfair_Display'] italic">
           {description}
         </p>
       </div>
@@ -191,7 +191,7 @@ const CompressedDirectionsCard = ({ icon: Icon, title, description }) => (
       <h4 className="font-['Playfair_Display'] text-base sm:text-lg text-gray-700 font-medium mb-1">
         {title}
       </h4>
-      <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">
+      <p className="text-gray-500 text-xs sm:text-sm leading-relaxed font-['Playfair_Display'] italic">
         {description}
       </p>
     </div>

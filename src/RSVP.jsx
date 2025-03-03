@@ -208,7 +208,7 @@ const CompressedRSVP = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base"
+                className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base font-['Playfair_Display'] italic"
                 placeholder="Enter your full name"
               />
               <div className="absolute right-3 top-8 text-pink-200 opacity-30 hidden sm:block">
@@ -231,7 +231,7 @@ const CompressedRSVP = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base"
+                  className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base font-['Playfair_Display'] italic"
                   placeholder="Enter your email"
                 />
               </div>
@@ -248,7 +248,7 @@ const CompressedRSVP = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base"
+                  className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base font-['Playfair_Display'] italic"
                   placeholder="Enter your phone number"
                 />
               </div>
@@ -268,7 +268,7 @@ const CompressedRSVP = () => {
                   value={formData.attendance}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base"
+                  className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base font-['Playfair_Display'] italic"
                 >
                   <option value="attending">Joyfully Accepting</option>
                   <option value="not-attending">Regretfully Declining</option>
@@ -287,7 +287,7 @@ const CompressedRSVP = () => {
                   value={formData.guests}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base"
+                  className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 text-sm sm:text-base font-['Playfair_Display'] italic"
                 >
                   {[1, 2, 3, 4].map((num) => (
                     <option key={num} value={num}>
@@ -313,7 +313,7 @@ const CompressedRSVP = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 h-20 sm:h-28 resize-none text-sm sm:text-base"
+                className="w-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/70 border border-pink-100 rounded-lg focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-200/50 transition-all duration-300 h-20 sm:h-28 resize-none text-sm sm:text-base font-['Playfair_Display'] italic"
                 placeholder="Share your wishes or message for us..."
               />
 
