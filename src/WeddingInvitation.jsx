@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
-import WeddingPhoto from "./assets/Wedding.jpg";
+import WeddingPhoto from "./assets/Wedding2.jpg";
 import {
   Heart,
   Stars,
@@ -403,8 +403,8 @@ const WeddingInvitation = () => {
                     {/* Romantic quote */}
                     <div className="text-center">
                       <p className="font-['Playfair_Display'] italic text-gray-500 text-sm sm:text-base">
-                        &quot;Two souls with but a single thought, two hearts
-                        that beat as one&quot;
+                        &quot;Two souls with a single thought, two hearts that
+                        beat as one&quot;
                       </p>
                     </div>
 

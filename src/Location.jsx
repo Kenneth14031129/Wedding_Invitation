@@ -166,11 +166,6 @@ const CompressedLocationCard = ({
         <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">
           {description}
         </p>
-
-        {/* View on map button - added for convenience */}
-        <button className="mt-1 px-3 py-1 text-xs sm:text-sm text-blue-500 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-full transition-colors duration-300 border border-blue-100/50 flex items-center gap-1 w-fit">
-          <MapPin className="w-3 h-3" /> View on map
-        </button>
       </div>
     </div>
   </div>
