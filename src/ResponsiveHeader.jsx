@@ -173,7 +173,7 @@ const ResponsiveHeader = ({
                 />
               </div>
               <p className="font-['Playfair_Display'] italic text-gray-500 text-sm">
-                &quot;Two souls with but a single thought, two hearts that beat
+                &quot;Two souls with a single thought, two hearts that beat
                 as one&quot;
               </p>
               <div className="pt-4 text-center text-gray-400 text-xs">
