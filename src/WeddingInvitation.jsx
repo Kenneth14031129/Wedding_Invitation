@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import BackgroundTheme from "./assets/BackgroundTheme.jpg";
 import AttireSection from "./AttireSection.jsx";
 import LocationSection from "./Location.jsx";
+import GroomsmenSection from "./Groomsmen.jsx"; // Import the new Groomsmen component
 
 const NavLink = ({ children, active, onClick }) => (
   <button
@@ -59,7 +60,8 @@ const WeddingInvitation = () => {
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
 
-    if (isLeftSwipe && activeSlide < 2) {
+    if (isLeftSwipe && activeSlide < 3) {
+      // Updated to accommodate 4 slides
       setActiveSlide(activeSlide + 1);
     } else if (isRightSwipe && activeSlide > 0) {
       setActiveSlide(activeSlide - 1);
@@ -209,6 +211,20 @@ const WeddingInvitation = () => {
                       <LocationSection />
                     </div>
                   </div>
+
+                  {/* Slide 4: Groomsmen Section */}
+                  <div className="min-w-full min-h-screen flex items-center justify-center relative">
+                    <div
+                      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                      style={{
+                        backgroundImage: `url(${BackgroundTheme})`,
+                        filter: "brightness(0.9)",
+                      }}
+                    />
+                    <div className="relative z-10 w-full">
+                      <GroomsmenSection />
+                    </div>
+                  </div>
                 </div>
 
                 {/* Navigation dots */}
@@ -240,6 +256,15 @@ const WeddingInvitation = () => {
                     }`}
                     aria-label="Go to slide 3"
                   />
+                  <button
+                    onClick={() => goToSlide(3)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      activeSlide === 3
+                        ? "bg-white scale-125"
+                        : "bg-white/50 hover:bg-white/80"
+                    }`}
+                    aria-label="Go to slide 4"
+                  />
                 </div>
 
                 {/* Navigation arrows (hidden on mobile) */}
@@ -255,9 +280,9 @@ const WeddingInvitation = () => {
                   <ChevronLeft className="w-6 h-6 text-white" />
                 </button>
                 <button
-                  onClick={() => activeSlide < 2 && goToSlide(activeSlide + 1)}
+                  onClick={() => activeSlide < 3 && goToSlide(activeSlide + 1)}
                   className={`absolute right-4 top-1/2 transform -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm transition-all ${
-                    activeSlide === 2
+                    activeSlide === 3
                       ? "opacity-0 pointer-events-none"
                       : "opacity-100"
                   }`}
