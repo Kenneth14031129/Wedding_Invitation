@@ -110,16 +110,16 @@ const WeddingInvitation = () => {
                     />
 
                     {/* Content overlay - this will center your text on the background */}
-                    <div className="relative z-10 max-w-4xl mx-auto text-center text-white px-4 py-12 md:py-16">
+                    <div className="relative z-10 max-w-4xl mx-auto text-center text-white px-4 py-8 md:py-16">
                       {/* Top tagline */}
-                      <div className="mb-8 md:mb-12">
+                      <div className="mb-5 md:mb-12">
                         <p className="font-['Playfair_Display'] uppercase tracking-wider text-sm sm:text-base md:text-lg">
                           YOU ARE INVITED TO A CELEBRATION OF LOVE
                         </p>
                       </div>
 
                       {/* Names section with elegant script font */}
-                      <div className="mb-12 md:mb-16">
+                      <div className="mb-6 md:mb-16">
                         <h1 className="font-['Imperial_Script'] text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wide text-white drop-shadow-lg">
                           Katrina
                           <span className="block -mt-4 sm:-mt-6">&</span>
@@ -128,53 +128,62 @@ const WeddingInvitation = () => {
                       </div>
 
                       {/* Subtitle */}
-                      <div className="mb-12 md:mb-20">
-                        <p className="font-['Playfair_Display'] italic text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+                      <div className="mb-6 md:mb-20">
+                        <p className="font-['Playfair_Display'] italic text-sm sm:text-base md:text-xl leading-relaxed max-w-2xl mx-auto">
                           Immerse yourself in a celebration of love and
-                          commitment. Join us as we begin our journey together
-                          with an evening bathed in gentle elegance and timeless
-                          grace.
+                          commitment as we begin our journey together.
                         </p>
                       </div>
 
                       {/* Date and location details at bottom */}
-                      <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-center">
+                      <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12 text-center">
                         <div className="flex flex-col">
-                          <span className="font-['Playfair_Display'] text-3xl sm:text-4xl mb-1">
-                            MAY
-                          </span>
-                          <span className="font-['Playfair_Display'] text-5xl sm:text-6xl font-light">
-                            18
-                          </span>
-                          <span className="font-['Playfair_Display'] text-2xl sm:text-3xl mt-1">
-                            2025
-                          </span>
+                          {/* Desktop view (stacked) */}
+                          <div className="hidden md:flex flex-col">
+                            <span className="font-['Playfair_Display'] text-3xl sm:text-4xl mb-1">
+                              MAY
+                            </span>
+                            <span className="font-['Playfair_Display'] text-5xl sm:text-6xl font-light">
+                              18
+                            </span>
+                            <span className="font-['Playfair_Display'] text-2xl sm:text-3xl mt-1">
+                              2025
+                            </span>
+                          </div>
+                          {/* Mobile view (single line) */}
+                          <div className="md:hidden">
+                            <span className="font-['Playfair_Display'] text-2xl sm:text-3xl">
+                              May 18, 2025
+                            </span>
+                          </div>
                         </div>
 
                         <div className="hidden md:block h-12 w-px bg-white/60"></div>
 
+                        {/* Location */}
                         <div className="flex flex-col">
-                          <span className="font-['Playfair_Display'] text-2xl sm:text-3xl mb-1">
+                          <span className="font-['Playfair_Display'] text-xl md:text-2xl sm:text-3xl mb-0 md:mb-1">
                             THE CHURCH AT
                           </span>
-                          <span className="font-['Playfair_Display'] text-3xl sm:text-4xl font-light">
+                          <span className="font-['Playfair_Display'] text-2xl md:text-3xl sm:text-4xl font-light">
                             BACOLOR
                           </span>
-                          <span className="font-['Playfair_Display'] text-lg sm:text-xl mt-2 italic">
+                          <span className="font-['Playfair_Display'] text-sm md:text-lg sm:text-xl mt-1 md:mt-2 italic">
                             San Guillermo Parish, Pampanga
                           </span>
                         </div>
 
                         <div className="hidden md:block h-12 w-px bg-white/60"></div>
 
+                        {/* Time */}
                         <div className="flex flex-col">
-                          <span className="font-['Playfair_Display'] text-2xl sm:text-3xl uppercase">
+                          <span className="font-['Playfair_Display'] text-xl md:text-2xl sm:text-3xl uppercase">
                             SATURDAY
                           </span>
-                          <span className="font-['Playfair_Display'] text-4xl sm:text-5xl font-light">
+                          <span className="font-['Playfair_Display'] text-3xl md:text-4xl sm:text-5xl font-light">
                             3:00
                           </span>
-                          <span className="font-['Playfair_Display'] text-2xl sm:text-3xl uppercase">
+                          <span className="font-['Playfair_Display'] text-xl md:text-2xl sm:text-3xl uppercase">
                             PM
                           </span>
                         </div>
@@ -258,7 +267,7 @@ const WeddingInvitation = () => {
                 </button>
 
                 {/* Swipe instruction (only shown on mobile) */}
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 md:hidden z-20">
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 md:hidden z-20">
                   <p className="text-white/80 text-sm font-['Playfair_Display'] italic">
                     Swipe for more details
                   </p>
