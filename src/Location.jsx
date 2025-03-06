@@ -23,9 +23,8 @@ const LocationSection = () => (
 
       {/* Transportation Information */}
       <div className="mt-6 w-full max-w-2xl mx-auto">
-        <p className="font-['Playfair_Display'] italic text-base text-white/90 drop-shadow text-center">
-          Transportation will be provided for guests. Shuttles will depart 30
-          minutes after the ceremony concludes.
+        <p className="font-['Playfair_Display'] italic text-lg text-white/90 drop-shadow text-center">
+          CLICK THE MAP TO REDIRECT TO GOOGLE MAPS
         </p>
       </div>
     </div>
