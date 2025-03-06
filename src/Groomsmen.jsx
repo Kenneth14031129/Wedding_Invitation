@@ -25,19 +25,19 @@ const GroomsmenSection = () => {
 
   // List of groomsmen data
   const groomsmenList = [
-    "Mr. Nilo La Guardia",
-    "Mr. Pacifico Garcia",
-    "Archt. Melvin Garcia",
-    "Mr. Kris La Guardia",
-    "Mr. Robin Garcia",
-    "Mr. Markneil La Guardia",
-    "Mr. Darren Garcia",
-    "Mr. Jay Garcia",
-    "Mr. Robbi Garcia",
-    "Mr. Jet Garcia",
-    "Mr. Zachary Garcia",
-    "Mr. Jat Garcia (Brother)",
-    "Mr. Ryan Garcia (Father)",
+    "Mr. Jeremy Gaviola",
+    "Mr. Vincent Serrano",
+    "Mr. Kenneth Gaviola",
+    "Mr. Jasper Perez",
+    "Mr. Carl Chen",
+    "Mr. Joshua Santos",
+    "Mr. Magno Lim Jr",
+    "Mr. Mark Pascual",
+    "Mr. Nathan Chua",
+    "Mr. Rhyne Frias Mendoza",
+    "Mr. Seph Sicangco",
+    "Mr. Sison Sy",
+    "Mr. Wilson Co",
   ];
 
   return (
