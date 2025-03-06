@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BackgroundTheme from "./assets/BackgroundTheme.jpg";
 import AttireSection from "./AttireSection.jsx";
+import LocationSection from "./Location.jsx";
 
 const NavLink = ({ children, active, onClick }) => (
   <button
@@ -58,10 +59,10 @@ const WeddingInvitation = () => {
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
 
-    if (isLeftSwipe && activeSlide < 1) {
-      setActiveSlide(1);
+    if (isLeftSwipe && activeSlide < 2) {
+      setActiveSlide(activeSlide + 1);
     } else if (isRightSwipe && activeSlide > 0) {
-      setActiveSlide(0);
+      setActiveSlide(activeSlide - 1);
     }
 
     // Reset values
@@ -127,7 +128,7 @@ const WeddingInvitation = () => {
                       </div>
 
                       {/* Subtitle */}
-                      <div className="mb-16 md:mb-24">
+                      <div className="mb-12 md:mb-20">
                         <p className="font-['Playfair_Display'] italic text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
                           Immerse yourself in a celebration of love and
                           commitment. Join us as we begin our journey together
@@ -185,6 +186,20 @@ const WeddingInvitation = () => {
                   <div className="min-w-full min-h-screen">
                     <AttireSection />
                   </div>
+
+                  {/* Slide 3: Location Section */}
+                  <div className="min-w-full min-h-screen flex items-center justify-center relative">
+                    <div
+                      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                      style={{
+                        backgroundImage: `url(${BackgroundTheme})`,
+                        filter: "brightness(0.9)",
+                      }}
+                    />
+                    <div className="relative z-10 w-full">
+                      <LocationSection />
+                    </div>
+                  </div>
                 </div>
 
                 {/* Navigation dots */}
@@ -207,6 +222,15 @@ const WeddingInvitation = () => {
                     }`}
                     aria-label="Go to slide 2"
                   />
+                  <button
+                    onClick={() => goToSlide(2)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      activeSlide === 2
+                        ? "bg-white scale-125"
+                        : "bg-white/50 hover:bg-white/80"
+                    }`}
+                    aria-label="Go to slide 3"
+                  />
                 </div>
 
                 {/* Navigation arrows (hidden on mobile) */}
@@ -222,9 +246,9 @@ const WeddingInvitation = () => {
                   <ChevronLeft className="w-6 h-6 text-white" />
                 </button>
                 <button
-                  onClick={() => activeSlide < 1 && goToSlide(activeSlide + 1)}
+                  onClick={() => activeSlide < 2 && goToSlide(activeSlide + 1)}
                   className={`absolute right-4 top-1/2 transform -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm transition-all ${
-                    activeSlide === 1
+                    activeSlide === 2
                       ? "opacity-0 pointer-events-none"
                       : "opacity-100"
                   }`}
